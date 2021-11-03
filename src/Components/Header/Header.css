@@ -1,13 +1,19 @@
 .header-nav{
     background-color: black;
-}
-
-.header-nav div{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+.ff-logo{
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
 }
 
-.header-icon{
-    color:white;
-    padding: 5px;
+.ff-logo img{
+    width: 25%;
+}
+
+.ff-logo a{
+    text-align: center;
 }

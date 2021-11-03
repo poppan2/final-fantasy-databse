@@ -1,17 +1,17 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import logo from './ff-logo.jpg'
 
-const Header = (props) => {
+const Header = () => {
 
   
   return (
     <header className="header-nav">
-      <div>
+      <div className="ff-logo">
         <Link to="/">
-          <i className="fas fa-home fa-2x header-icon"></i>
+          <img alt='ff-logo' src={logo} />
         </Link>
-        
       </div>
     </header>
   );

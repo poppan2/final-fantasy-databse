@@ -1,16 +1,25 @@
-/* .footer{
-    position: absolute;
+.footer{
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
 .nav-bar {
     background-color: black;
-    display: none;
+    display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 
 .icon{
     color: white;
     padding: 5px 
-;} */
+;}
+
+.nav-bar p{
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    position: relative;
+    top: -5px;
+}

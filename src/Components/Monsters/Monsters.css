@@ -1,54 +1,47 @@
-.monsters{
+.ff-monsters{
+    padding-bottom: 50px;
+}
+.ff-monster{
     position: relative;
     margin: 10px 25px;
     text-align: center;
     border: 3px solid black;
     padding-top: 10px;
-    background-color: rgba(41, 47, 57, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
-.monster .monster-image{
+
+.ff-monster .ff-monster-img{
     width: 50%;
     margin: 0 auto;
     
 }
-
-.monster img{
-    width: 90%;
-    height: 200px;
+.ff-monster img{
+    width: 100%;
+    height: 150px;
 }
-
-/* .monster{
-    display: none;
-} */
-
-.monster p{
+.ff-monster a{
+    text-decoration: none;
+}
+.ff-monster ul{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    padding: 2px 5px;
+    text-align: left;
+}
+.ff-monster span{
+    color: red;
+    font-weight: 700;
+    font-size: 16px;
+}
+.monster-lists{
+    display: flex;
+    justify-content: space-around;
+}
+.ff-monster p{
     color: white;
+    margin: 0 0 10px 0;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: rgba(0,0,0,0.8);
-    background-color: white;;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
 
-  .prev{
-      left: 0;
-  }
+
   

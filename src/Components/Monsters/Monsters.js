@@ -1,66 +1,51 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Monsters.css";
-import { Link } from "react-router-dom";
 
-const Monsters = () => {
-  const [monster, setMonster] = useState([]);
-
-  const makeAPICall = (url) => {
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => setMonster(data));
-  };
-
-  useEffect(() => {
-    const monstersURL = "https://www.moogleapi.com/api/v1/monsters";
-    makeAPICall(monstersURL);
-  }, []);
-
-  
-  const monsters =
-    monster &&
-    monster.map((monSter) => {
-      return (
-        <div className="monster" key={monSter.monsterId}>
-          <div className="monster-image">
-            <img alt="FF-monster" src={monSter.picture} />
-          </div>
-          {monster && <p>Name: {monSter.name}</p>}
-          {monster && <p>FF Series: {monSter.game}</p>}
+const Monsters = (props) => {
+  const monsters = props.monsters.map((monster) => {
+    return (
+      <div className="ff-monster">
+        <div className="ff-monster-img">
+          <img alt="ff-monster" src={monster.picture} />
         </div>
-      );
-    });
+        <div className="monster-lists">
+          <ul>
+            <li>
+              <span>Name: </span>{monster.name}
+            </li>
+            <li>
+              <span>JapaneseName: </span>{monster.japaneseName}
+            </li>
+            <li>
+              <span>E-Affinity: </span>{monster.elementalAffinity}
+            </li>
+            <li>
+              <span>E-Weakness: </span>{monster.elementalWeakness}
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span>HP: </span>{monster.hitPoints}
+            </li>
+            <li>
+              <span>MP: </span>{monster.manaPoints}
+            </li>
+            <li>
+              <span>Atk: </span>{monster.attack}
+            </li>
+            <li>
+              <span>Def: </span>{monster.defense}
+            </li>
+          </ul>
+        </div>
 
-  // let slideIndex = 0;
-  // let slides = monster && document.getElementsByClassName("monster");
-  // if(slides.length > 0){showSlides(slideIndex)}
-
-  // function plusSlides(n) {
-  //   if(slides.length > 0){showSlides((slideIndex += n))}
-  // }
-
-  // function showSlides(n) {
-
-  //   if (n > slides.length) {
-  //     slideIndex = 1;
-  //   }
-  //   if (n < 1) {
-  //     slideIndex = slides.length;
-  //   }
-  //   for (let i = 0; i < slides.length; i++) {
-  //     slides[i].style.display = "none";
-  //   }
-  //   slides[slideIndex - 1].style.display = "block";
-  // }
-
-  return (
-    <div className="monsters">
-      
-      {monsters}
-      {/* <button className="prev" onClick={()=>plusSlides(-1)}>{"<"}</button>
-      <button className="next" onClick={()=>plusSlides(1)}>{">"}</button> */}
-    </div>
-  );
+        <p>
+          <span>FF-Series: </span>{monster.game}
+        </p>
+      </div>
+    );
+  });
+  return <div className="ff-monsters">{monsters}</div>;
 };
 
 export default Monsters;

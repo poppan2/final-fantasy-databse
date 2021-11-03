@@ -1,0 +1,33 @@
+.monsters {
+    padding-bottom: 60px;
+}
+.monster{
+    position: relative;
+    margin: 10px 25px;
+    text-align: center;
+    border: 3px solid black;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.monster .monster-image{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.monster img{
+    width: 100%;
+    height: 150px;
+}
+.monster a{
+    text-decoration: none;
+}
+.monster p{
+    color: rgb(241, 0, 0);
+    font-weight: 700;
+    font-size: 17px;
+}
+
+
+
+  

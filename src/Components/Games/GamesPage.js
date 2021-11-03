@@ -3,7 +3,7 @@ import "./GamesPage.css";
 import defaultImage from "./ff14.jpg";
 import { Link } from "react-router-dom";
 
-const Games = () => {
+const GamesPage = () => {
   const [ffGames, setFFGames] = useState([]);
 
   const makeAPICall = (url) => {
@@ -50,4 +50,4 @@ const Games = () => {
   );
 };
 
-export default Games;
+export default GamesPage;
