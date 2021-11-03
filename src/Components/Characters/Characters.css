@@ -1,0 +1,45 @@
+.characters{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 25px;
+
+}
+.randomCharacter{
+    width: 100%;
+    margin: 10px auto;
+    border: 3px solid black;
+}
+.randomCharacter img, .randomCharacter div{
+    margin: 0 15px;
+}
+.randomCharacter .list{
+    margin: 0;
+}
+.randomCharacter img{
+    width: 50%;
+    margin-top: 10px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+
+.list ul{
+    padding: 0;
+}
+.list li{
+    list-style: none;
+}
+.list span{
+    font-weight: 700;
+    color: red;
+}
+
+.randomCharacter .description{
+    text-align: left;
+    margin-bottom: 10px;
+}
+

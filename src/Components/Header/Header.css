@@ -1,0 +1,13 @@
+.header-nav{
+    background-color: black;
+}
+
+.header-nav div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-icon{
+    color:white;
+    padding: 5px;
+}

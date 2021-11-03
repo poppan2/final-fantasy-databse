@@ -1,0 +1,33 @@
+.random-character{
+    text-align: center;
+    border: 3px solid black;
+    margin: 50px 25px 25px 20px;
+}
+.random-character .image{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.random-character img{
+    width: 100%;
+}
+
+.lists{
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+.lists ul{
+    padding: 0;
+}
+.lists li{
+    list-style: none;
+}
+.lists span{
+    font-weight: 700;
+    color: red;
+}
+.character-page{
+    text-decoration: none;
+    font-size: 20px;
+}
