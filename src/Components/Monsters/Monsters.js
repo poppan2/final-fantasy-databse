@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Monsters.css";
+import { Link } from "react-router-dom";
 
 const Monsters = () => {
   const [monster, setMonster] = useState([]);
@@ -15,6 +16,7 @@ const Monsters = () => {
     makeAPICall(monstersURL);
   }, []);
 
+  
   const monsters =
     monster &&
     monster.map((monSter) => {
@@ -29,7 +31,6 @@ const Monsters = () => {
       );
     });
 
-
   // let slideIndex = 0;
   // let slides = monster && document.getElementsByClassName("monster");
   // if(slides.length > 0){showSlides(slideIndex)}
@@ -39,7 +40,7 @@ const Monsters = () => {
   // }
 
   // function showSlides(n) {
-    
+
   //   if (n > slides.length) {
   //     slideIndex = 1;
   //   }
@@ -54,6 +55,7 @@ const Monsters = () => {
 
   return (
     <div className="monsters">
+      
       {monsters}
       {/* <button className="prev" onClick={()=>plusSlides(-1)}>{"<"}</button>
       <button className="next" onClick={()=>plusSlides(1)}>{">"}</button> */}

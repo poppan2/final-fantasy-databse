@@ -1,52 +1,58 @@
-import React, { useEffect, useState } from "react";
 import "./Games.css";
+import defaultImage from "./ffbrave-exius.jpg";
+import { Link } from "react-router-dom";
 
-const Games = () => {
-  const [ffGames, setFFGames] = useState([]);
+const Game = (props) => {
 
-  const makeAPICall = (url) => {
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => setFFGames(data));
-  };
-
-  useEffect(() => {
-    const gamesURL = "https://www.moogleapi.com/api/v1/games";
-    makeAPICall(gamesURL);
-  }, []);
-
-  const games =
-    ffGames &&
-    ffGames.map((game) => {
-      return (
-        <div className="game" key={game.gameId}>
-          <div className="game-image">
-            <img alt="FF-Game" src={game.picture} />
+  const gAmes =
+    props.games &&
+    props.games.map((game) => {
+      if (game.gameId === "8f24fe1b-0e23-47c3-bca1-08d712cd7324") {
+        return (
+          <div className="ff-game">
+            <Link to={'/games/' + game.title}><div className="ff-game-image">
+              <img alt="ff-game-img" src={defaultImage} />
+            </div></Link>
+            <ul>
+              <li>
+                <span>Title:</span> {game.title}
+              </li>
+              <li>
+                <span>Platform: </span>
+                {game.platform}
+              </li>
+              <li>
+                <span>Release Date: </span>
+                {game.releaseDate}
+              </li>
+            </ul>
           </div>
-        </div>
-      );
+        );
+      } else {
+        return (
+          <div className="ff-game">
+            <Link to={'/games/' + game.title}><div className="ff-game-image">
+              <img alt="ff-game-img" src={game.picture} />
+            </div></Link>
+            <ul>
+              <li>
+                <span>Title:</span> {game.title}
+              </li>
+              <li>
+                <span>Platform: </span>
+                {game.platform}
+              </li>
+              <li>
+                <span>Release Date: </span>
+                {game.releaseDate}
+              </li>
+            </ul>
+          </div>
+        );
+      }
     });
 
-  // let slideIndex = 0;
-  // let slides = ffGames && document.getElementsByClassName("game");
-
-  // if (slides.length > 0) {
-  //   showSlides(slideIndex);
-
-  //   function showSlides() {
-  //     for (let i = 0; i < slides.length; i++) {
-  //       slides[i].style.display = "none";
-  //     }
-  //     slideIndex++;
-  //     if (slideIndex > slides.length) {
-  //       slideIndex = 1;
-  //     }
-  //     slides[slideIndex - 1].style.display = "block";
-  //     setTimeout(showSlides, 3000);
-  //   }
-  // }
-
-  return <div className="games">{games}</div>;
+  return <div className="ff-games">{gAmes}</div>;
 };
 
-export default Games;
+export default Game;

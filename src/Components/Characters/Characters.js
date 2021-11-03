@@ -56,7 +56,7 @@ const Characters = (props) => {
           ? character.pictures[0].url
           : "https://mooglestorage.blob.core.windows.net/images/9a5f4c52-9806-493e-9352-5750a5420006.jpg";
       return (
-        <div className="randomCharacter">
+        <div className="randomCharacter" key={character.id}>
           <img alt="random-FF-Character" src={source} />
           <div className="list">
             <ul>
@@ -111,8 +111,8 @@ const Characters = (props) => {
           value={props.inputValue}
           onChange={props.handleChange}
         />
-        <button onClick={props.handleSearchOnClick}>
-          <i class="fas fa-search"></i>
+        <button onClick={props.handleClearOnClick}>
+          clear
         </button>
       </div>
       {searchedCharacters}

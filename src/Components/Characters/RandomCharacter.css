@@ -1,7 +1,8 @@
 .random-character{
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid rgb(182, 181, 181);
     margin: 50px 25px 25px 20px;
+    background-color: rgba(123, 123, 124, 0.8);
 }
 .random-character .image{
     width: 50%;
@@ -16,12 +17,16 @@
     display: flex;
     justify-content: space-around;
     text-align: start;
+    margin: 0 5px;
+    font-size: 12px;
 }
 .lists ul{
     padding: 0;
 }
 .lists li{
     list-style: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
 }
 .lists span{
     font-weight: 700;

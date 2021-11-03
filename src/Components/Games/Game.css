@@ -1,0 +1,34 @@
+.main-ff-game{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.ff-indiv-game{
+    margin: 20px 10px;
+    padding-top: 10px;
+}
+.ff-indiv-game .ff-indiv-game-image{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.ff-indiv-game img{
+    width: 100%;
+    margin-top: 10px;;
+}
+
+.ff-indiv-game ul{
+    list-style: none;
+    color: white;
+    font-weight: 600;
+}
+
+.ff-indiv-game span{
+    color: red;
+    font-weight: 700;
+}
+
+.game-description{
+    color: white;
+    padding: 10px 10px;
+}

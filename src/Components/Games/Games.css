@@ -1,21 +1,34 @@
-.games{
+.ff-games{
     position: relative;
     margin: 20px 10px;
     text-align: center;
-    border: 3px solid black;
     padding-top: 10px;
 }
-.game .game-image{
+
+.ff-games .ff-game-image{
     width: 90%;
     margin: 0 auto;
     
 }
+.ff-game{
+    border: 2px solid black;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
 
-.game img{
+}
+.ff-games img{
     width: 100%;
     height: 150px;
+    margin-top: 10px;
 }
 
-/* .game{
-    display: none;
-} */
+.ff-game ul{
+    list-style: none;
+    color: white;
+    font-weight: 500;
+}
+
+.ff-game span{
+    color: red;
+    font-weight: 700;
+}
