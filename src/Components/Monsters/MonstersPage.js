@@ -1,6 +1,6 @@
 import "./MonstersPage.css";
 import { Link } from "react-router-dom";
-import defaultMonsterImg from './ff-monster.png'
+import defaultMonsterImg from "./ff-monster.png";
 
 const MonstersPage = () => {
   // const monsters =
@@ -34,13 +34,17 @@ const MonstersPage = () => {
   return (
     <div className="monsters">
       <div className="monster">
-       <Link to='/monsters'> <div className="monster-image">
-           <img alt="FF-monster" src={defaultMonsterImg} />
-           <p><span>Go to Monsters Page </span></p>
-        </div></Link>
+        <Link to="/monsters">
+          <div className="monster-image">
+            <img alt="FF-monster" src={defaultMonsterImg} />
+            <p>
+              <span>More Monsters</span>
+            </p>
+          </div>
+        </Link>
       </div>
-      </div>
-      /* <button className="prev" onClick={()=>plusSlides(-1)}>{"<"}</button>
+    </div>
+    /* <button className="prev" onClick={()=>plusSlides(-1)}>{"<"}</button>
       <button className="next" onClick={()=>plusSlides(1)}>{">"}</button> */
   );
 };

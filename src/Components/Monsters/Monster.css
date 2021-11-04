@@ -1,0 +1,44 @@
+.main-ff-monster{
+    position: relative;
+    margin: 10px 25px;
+    text-align: center;
+    border: 3px solid black;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.main-ff-monster .ff-indiv-monster-img{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    
+}
+.main-ff-monster img{
+    width: 100%;
+    height: 150px;
+}
+.main-ff-monster a{
+    text-decoration: none;
+}
+.main-ff-monster ul{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    padding: 2px 5px;
+    text-align: left;
+}
+.main-ff-monster span{
+    color: red;
+    font-weight: 700;
+    font-size: 16px;
+}
+.monster-lists{
+    display: flex;
+    justify-content: space-around;
+}
+.main-ff-monster p{
+    color: white;
+    margin: 0 0 10px 0;
+}
+.monster-description{
+    color: white;
+    padding-bottom: 50px;
+}

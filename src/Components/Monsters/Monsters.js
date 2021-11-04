@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Monsters.css";
 
 const Monsters = (props) => {
   const monsters = props.monsters.map((monster) => {
     return (
-      <div className="ff-monster">
-        <div className="ff-monster-img">
+      <div className="ff-monster" key={monster.monsterId}>
+        <Link to={'/monsters/' + monster.monsterId}><div className="ff-monster-img">
           <img alt="ff-monster" src={monster.picture} />
-        </div>
+        </div></Link>
         <div className="monster-lists">
           <ul>
             <li>

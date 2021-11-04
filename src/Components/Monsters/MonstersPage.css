@@ -1,14 +1,16 @@
 .monsters {
-    padding-bottom: 60px;
+    margin: 25px 20px;
+    padding-bottom: 20px;
 }
 .monster{
     position: relative;
-    margin: 10px 25px;
     text-align: center;
-    border: 3px solid black;
     padding-top: 10px;
+    margin-bottom: 50px;
     background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
 }
+
 
 .monster .monster-image{
     width: 50%;
@@ -24,8 +26,8 @@
 }
 .monster p{
     color: rgb(241, 0, 0);
-    font-weight: 700;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 

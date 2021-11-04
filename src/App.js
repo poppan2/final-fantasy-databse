@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Characters from "./Components/Characters/Characters";
+import Character from "./Components/Characters/Character";
 import GamesPage from "./Components/Games/GamesPage";
 import Games from "./Components/Games/Games";
 import Game from "./Components/Games/Game";
@@ -10,9 +11,36 @@ import { Route } from "react-router";
 import { useState, useEffect } from "react";
 import MonstersPage from "./Components/Monsters/MonstersPage";
 import Monsters from "./Components/Monsters/Monsters";
+import Monster from "./Components/Monsters/Monster";
 
 function App() {
-  // Game API Call
+  // Characters API Call
+  const [characters, setCharacters] = useState([]);
+  const [randomCharacters, setRandomCharacters] = useState();
+  const charAPICall = (url) => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => setCharacters(data));
+  };
+
+  useEffect(() => {
+    const charactersURL = "https://www.moogleapi.com/api/v1/characters";
+    charAPICall(charactersURL);
+  }, []);
+
+  const makeRandomCharAPICall = (url) => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => setRandomCharacters(data));
+  };
+
+  useEffect(() => {
+    const randomCharacterURL =
+      "https://www.moogleapi.com/api/v1/characters/random";
+    makeRandomCharAPICall(randomCharacterURL);
+  }, []);
+
+  // Games API Call
   const [games, setGames] = useState([]);
   const gamesAPICall = (url) => {
     fetch(url)
@@ -45,9 +73,6 @@ function App() {
     setInputValue("");
   };
 
-  const characterOnClick = (characterID) => {
-    console.log("Hi, I have been clicked");
-  };
   const handleChange = (event) => {
     setInputValue(event.target.value);
   };
@@ -60,17 +85,24 @@ function App() {
           path="/"
           exact
           render={() => (
-            <RandomCharacters characterOnClick={characterOnClick} />
+            <RandomCharacters randomCharacters={randomCharacters} />
           )}
         />
         <Route
           path="/characters"
           exact
+          render={() => <Characters characters={characters} />}
+        />
+        <Route
+          path="/characters/:characterId"
+          exact
           render={() => (
-            <Characters
+            <Character
               inputValue={inputValue}
               handleClearOnClick={handleClearOnClick}
               handleChange={handleChange}
+              characters={characters}
+              randomCharacters={randomCharacters}
             />
           )}
         />
@@ -86,6 +118,11 @@ function App() {
           path="/monsters"
           exact
           render={() => <Monsters monsters={monsters} />}
+        />
+        <Route
+          path="/monsters/:monsterId"
+          exact
+          render={() => <Monster monsters={monsters} />}
         />
       </main>
       <Footer />

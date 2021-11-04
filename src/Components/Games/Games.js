@@ -9,7 +9,7 @@ const Game = (props) => {
     props.games.map((game) => {
       if (game.gameId === "8f24fe1b-0e23-47c3-bca1-08d712cd7324") {
         return (
-          <div className="ff-game">
+          <div className="ff-game" key={game.gameId}>
             <Link to={'/games/' + game.title}><div className="ff-game-image">
               <img alt="ff-game-img" src={defaultImage} />
             </div></Link>

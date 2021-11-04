@@ -1,6 +1,7 @@
 .main-ff-game{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 100px;
 }
 .ff-indiv-game{
     margin: 20px 10px;

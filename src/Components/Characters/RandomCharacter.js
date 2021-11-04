@@ -61,7 +61,7 @@ const RandomCharacters = (props) => {
           {character && <li><span>Weight:</span> {character.weight}</li>}
         </ul>
       </div>
-      <Link to="/characters"><p className="character-page">Characters</p></Link>
+      <Link to="/characters"><p className="character-page">More Characters</p></Link>
     </div>
   );
 };
