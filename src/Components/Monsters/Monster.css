@@ -68,3 +68,32 @@
         font-size: 17px;
     }
 }
+
+@media screen and (min-width: 992px){
+    .main-ff-monster{
+        margin: 0 100px;
+        padding-bottom: 300px;
+        margin-top: 50px;
+    }
+    .main-ff-monster .ff-indiv-monster-img{
+        width: 30%;
+        margin-top: 30px;
+    }
+    .main-ff-monster img{
+        height: 400px;
+    }
+    .main-ff-monster ul{
+        font-size: 17px;
+    }
+    .main-ff-monster span{
+        font-size: 20px;
+    }
+    .main-ff-monster p{
+        font-size: 17px;
+    }
+    .monster-description{
+        margin: 0 20px;
+        padding-bottom: 50px;
+        font-size: 17px;
+    }
+}

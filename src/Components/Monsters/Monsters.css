@@ -7,7 +7,7 @@
     text-align: center;
     border: 3px solid black;
     padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .ff-monster .ff-monster-img{
@@ -44,7 +44,7 @@
 
 @media screen and (min-width: 768px){
     .ff-monsters{
-        padding-bottom: 150px;
+        padding-bottom: 100px;
         padding-top: 30px;
     }
     .ff-monster{
@@ -68,6 +68,32 @@
     }    
 }
 
+@media screen and (min-width: 992px){
+    .ff-monsters{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+    .ff-monster{
+        border: 3px solid black;
+        width: 30%;
+        margin: 20px auto;
+    }
+    .ff-monster .ff-monster-img{
+        margin: 0 auto;
+        margin-top: 20px;
+        
+    }
+    .ff-games img{
+        height: 130px;
+    }
+    .ff-monster ul{
+        font-size: 15px;
+    }
+    .ff-monster span{
+        font-size: 17px;
+    }
+}
 
 
   

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./CharactersPage.css";
 import { Link } from "react-router-dom";
+import defaultImg from './moogle.jpg'
 
 const CharactersPage = (props) => {
+
   let source =
-    props.randomCharacters && props.randomCharacters.pictures[0] ? props.randomCharacters.pictures[0].url : 'https://mooglestorage.blob.core.windows.net/images/9a5f4c52-9806-493e-9352-5750a5420006.jpg';
+    props.randomCharacters && props.randomCharacters.pictures[0] ? props.randomCharacters.pictures[0].url : defaultImg;
 
   if (props.randomCharacters) {
     if (props.randomCharacters.age === "??") {
@@ -21,6 +23,7 @@ const CharactersPage = (props) => {
     }
   }
   return (
+    <div className="random-characters">
     <div className="random-character">
       <button onClick={props.handleClick}>New Random Character</button>
       <Link to='/characters'><div className="image">
@@ -42,6 +45,7 @@ const CharactersPage = (props) => {
         </ul>
       </div>
       <Link to="/characters"><p className="character-page">More Characters</p></Link>
+    </div>
     </div>
   );
 };

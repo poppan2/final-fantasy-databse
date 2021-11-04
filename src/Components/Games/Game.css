@@ -9,8 +9,7 @@
 }
 .ff-indiv-game .ff-indiv-game-image{
     width: 90%;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 .ff-indiv-game img{
@@ -57,4 +56,18 @@
     .main-ff-game button{
         transform: scale(1.2);
     }
+}
+
+@media screen and (min-width: 992px){
+    .game-description{
+        font-size: 20px;
+        padding: 10px 150px;
+    }
+    .main-ff-game button{
+        transform: scale(1.5);
+    }
+    .ff-indiv-game .ff-indiv-game-image{
+        width: 80%; 
+    }
+    
 }
