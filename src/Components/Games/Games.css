@@ -5,11 +5,9 @@
     padding-top: 10px;
     padding-bottom: 50px;
 }
-
 .ff-games .ff-game-image{
     width: 90%;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
 .ff-game{
     border: 2px solid black;
@@ -22,14 +20,43 @@
     height: 150px;
     margin-top: 10px;
 }
-
 .ff-game ul{
     list-style: none;
     color: white;
     font-weight: 500;
 }
-
 .ff-game span{
     color: red;
     font-weight: 700;
+}
+
+@media screen and (min-width: 768px){
+    .ff-games{
+        padding-bottom: 120px;
+    }
+    .ff-game{
+        border: 3px solid black;
+        margin: 25px 25px;
+    }
+    .ff-games img{
+        height: 250px;
+        margin-top: 30px;
+    }
+    .ff-game span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .ff-games{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ff-game{
+        border: 3px solid black;
+        width: 20%;
+    }
+    .ff-games img{
+        height: 150px;
+    }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Characters.css";
+import defaultImg from './moogle.jpg'
 
 const Characters = (props) => {
   const FFArr = props.characters.filter((series) => {
@@ -46,100 +47,156 @@ const Characters = (props) => {
     return series.origin === "Final Fantasy XV";
   });
   const FFChars = FFArr.map((char) => {
-     return (
+    const imgSrc = char && char.pictures[0]? char.pictures[0].url : defaultImg;
+    return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFBEChars = FFBEArr.map((char) => {
-     return (
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
+    return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFIIChars = FFIIArr.map((char) => {
-     return (
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
+    return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFIIIChars = FFIIIArr.map((char) => {
-     return (
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
+    return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFIVChars = FFIVArr.map((char) => {
-     return (
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
+    return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFVChars = FFVArr.map((char) => {
-     return (
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
+    return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFVIChars = FFVIArr.map((char) => {
-     return (
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
+    return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFVIIChars = FFVIIArr.map((char) => {
-     return (
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
+    return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFVIIIChars = FFVIIIArr.map((char) => {
-     return (
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
+    return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFIXChars = FFIXArr.map((char) => {
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFXChars = FFXArr.map((char) => {
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFXIIChars = FFXIIArr.map((char) => {
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFXIIIChars = FFXIIIArr.map((char) => {
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });
   const FFXVChars = FFXVArr.map((char) => {
+    const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
       <Link to={"/characters/" + char.id}>
-        <li key={char.id}>{char.name}</li>
+        <div className="ff-character-info">
+          <img alt="ff-character" src={imgSrc} />
+          <li key={char.id}>{char.name}</li>
+        </div>
       </Link>
     );
   });

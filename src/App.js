@@ -6,7 +6,7 @@ import Character from "./Components/Characters/Character";
 import GamesPage from "./Components/Games/GamesPage";
 import Games from "./Components/Games/Games";
 import Game from "./Components/Games/Game";
-import RandomCharacters from "./Components/Characters/RandomCharacter";
+import CharactersPage from "./Components/Characters/CharactersPage";
 import { Route } from "react-router";
 import { useState, useEffect } from "react";
 import MonstersPage from "./Components/Monsters/MonstersPage";
@@ -77,6 +77,11 @@ function App() {
     setInputValue(event.target.value);
   };
 
+  const handleClick = ()=>{
+    fetch('https://www.moogleapi.com/api/v1/characters/random')
+      .then((response) => response.json())
+      .then((data) => setRandomCharacters(data));
+  }
   return (
     <div className="App">
       <Header />
@@ -85,7 +90,7 @@ function App() {
           path="/"
           exact
           render={() => (
-            <RandomCharacters randomCharacters={randomCharacters} />
+            <CharactersPage randomCharacters={randomCharacters} handleClick={handleClick}/>
           )}
         />
         <Route
@@ -102,7 +107,6 @@ function App() {
               handleClearOnClick={handleClearOnClick}
               handleChange={handleChange}
               characters={characters}
-              randomCharacters={randomCharacters}
             />
           )}
         />

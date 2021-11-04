@@ -33,8 +33,8 @@ const GamesPage = (props) => {
         <div className="game-image">
           <img id="image" src={games[i]} alt="ff-game" />
         </div>
+        <p>More Games</p>
       </Link>
-      <p>More Games</p>
     </div>
   );
 };

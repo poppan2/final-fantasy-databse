@@ -5,7 +5,7 @@
 .monster{
     position: relative;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px 0;
     margin-bottom: 50px;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
@@ -30,6 +30,22 @@
     font-size: 20px;
 }
 
+@media screen and (min-width: 768px){
+    .monsters {
+        margin: 25px 50px;
+        padding-bottom: 100px;
+    }
+    .monster{
+        padding-top: 30px;
+    }
+    .monster img{
+        height: 300px;
+    }
+    .monster p{
+        font-size: 25px;
+    }
+        
+}
 
 
   

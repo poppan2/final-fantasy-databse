@@ -4,47 +4,94 @@
     flex-direction: column;
     margin: 5px 25px;
     padding-bottom: 150px;
-
 }
-.randomCharacter{
+.indiv-character{
     width: 100%;
     margin: 10px auto;
     border: 3px solid black;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
 }
-.randomCharacter img, .randomCharacter div{
+.indiv-character img, .indiv-character div{
     margin: 0 15px;
 }
-.randomCharacter .list{
+.indiv-character .list{
     margin: 0;
 }
-.randomCharacter img{
+.indiv-character img{
     width: 50%;
     margin-top: 10px;
 }
-
-.list{
+.char-lists{
     display: flex;
     justify-content: space-around;
     text-align: start;
 }
-
-.list ul{
+.char-lists ul{
     padding: 0;
     font-size: 12px;
 }
-.list li{
+.char-lists li{
     list-style: none;
+    color: white;
 }
-.list span{
+.char-lists span{
     font-weight: 700;
     color: red;
     font-size: 15px;
 }
-
-.randomCharacter .description{
+.indiv-character .description{
     text-align: left;
     margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px){
+    .characters{
+        margin: 5px 50px;
+        padding-bottom: 200px;
+        padding-top: 50px;
+    }
+    .indiv-character{
+        margin: 20px 0;
+    }
+    .char-lists ul{
+        font-size: 16px;
+    }
+    .char-lists span{
+        font-size: 20px;
+    }
+    .indiv-character img{
+        width: 30%;
+        margin-top: 25px;
+    }
+    .indiv-character .description{
+        font-size: 18px;
+        padding: 5px 25px;
+        margin-bottom: 50px;
+    } 
+}
+@media screen and (min-width: 992px){
+    .characters{
+        margin: 5px 50px;
+        padding-bottom: 200px;
+        padding-top: 20px;
+    }
+    .indiv-character{
+        margin: 10px 0;
+    }
+    .char-lists ul{
+        font-size: 18px;
+    }
+    .char-lists span{
+        font-size: 22px;
+    }
+    .indiv-character img{
+        width: 25%;
+        margin-top: 25px;
+    }
+    .indiv-character .description{
+        font-size: 18px;
+        padding: 5px 25px;
+        margin-bottom: 50px;
+    } 
+}

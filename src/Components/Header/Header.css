@@ -17,3 +17,42 @@
 .ff-logo a{
     text-align: center;
 }
+.hnav-bar{
+    display: flex;
+    justify-content: center;
+}
+.hicon, .hnav-bar p{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .hicon, .hnav-bar p{
+        display: inline-block;
+        color: white;
+    }
+    .hnav-bar{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .hnav-bar p{
+        margin: 0;
+    }
+    .hnav-bar div{
+        text-align: center;
+    }
+    .ff-logo a{
+        width: 100px;
+    }
+    .ff-logo img{
+        width: 100%;
+    }
+    .hnav-bar a{
+        margin: 0 20px;
+    }
+    .header-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+}
