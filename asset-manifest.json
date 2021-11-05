@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/final-fantasy-databse/static/css/main.641afd9d.chunk.css",
-    "main.js": "/final-fantasy-databse/static/js/main.e23c1608.chunk.js",
-    "main.js.map": "/final-fantasy-databse/static/js/main.e23c1608.chunk.js.map",
+    "main.js": "/final-fantasy-databse/static/js/main.60aa3638.chunk.js",
+    "main.js.map": "/final-fantasy-databse/static/js/main.60aa3638.chunk.js.map",
     "runtime-main.js": "/final-fantasy-databse/static/js/runtime-main.e69ee5f1.js",
     "runtime-main.js.map": "/final-fantasy-databse/static/js/runtime-main.e69ee5f1.js.map",
     "static/js/2.8e86ae41.chunk.js": "/final-fantasy-databse/static/js/2.8e86ae41.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.e69ee5f1.js",
     "static/js/2.8e86ae41.chunk.js",
     "static/css/main.641afd9d.chunk.css",
-    "static/js/main.e23c1608.chunk.js"
+    "static/js/main.60aa3638.chunk.js"
   ]
 }
