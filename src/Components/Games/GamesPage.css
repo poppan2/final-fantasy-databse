@@ -36,3 +36,22 @@
         font-size: 25px;
     }
 }
+
+@media screen and (min-widtH: 992px){
+    .games{
+        margin: 20px 150px;
+        padding: 30px 5px;
+    }
+    .games .game-image{
+        width: 80%;
+        margin: 0 auto;
+        height: 300px;
+    }
+    .games img{
+        height: 300px;
+        margin-right: 0;
+    } 
+    .games p{
+        font-size: 25px;
+    }
+}

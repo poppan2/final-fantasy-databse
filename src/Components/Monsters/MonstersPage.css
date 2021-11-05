@@ -47,5 +47,22 @@
         
 }
 
+@media screen and (min-width: 992px){
+    .monsters {
+        margin: 25px 150px;
+        padding-bottom: 100px;
+    }
+    .monster{
+        padding-top: 30px;
+    }
+    .monster img{
+        height: 300px;
+    }
+    .monster p{
+        font-size: 25px;
+    }
+        
+}
+
 
   

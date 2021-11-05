@@ -23,7 +23,6 @@ const CharactersPage = (props) => {
     }
   }
   return (
-    <div className="random-characters">
     <div className="random-character">
       <button onClick={props.handleClick}>New Random Character</button>
       <Link to='/final-fantasy-databse/characters'><div className="image">
@@ -45,7 +44,6 @@ const CharactersPage = (props) => {
         </ul>
       </div>
       <Link to="/final-fantasy-databse/characters"><p className="character-page">More Characters</p></Link>
-    </div>
     </div>
   );
 };
