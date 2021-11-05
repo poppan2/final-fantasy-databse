@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/final-fantasy-databse/static/css/main.641afd9d.chunk.css",
-    "main.js": "/final-fantasy-databse/static/js/main.953d522d.chunk.js",
-    "main.js.map": "/final-fantasy-databse/static/js/main.953d522d.chunk.js.map",
+    "main.js": "/final-fantasy-databse/static/js/main.e23c1608.chunk.js",
+    "main.js.map": "/final-fantasy-databse/static/js/main.e23c1608.chunk.js.map",
     "runtime-main.js": "/final-fantasy-databse/static/js/runtime-main.e69ee5f1.js",
     "runtime-main.js.map": "/final-fantasy-databse/static/js/runtime-main.e69ee5f1.js.map",
-    "static/js/2.c636af6f.chunk.js": "/final-fantasy-databse/static/js/2.c636af6f.chunk.js",
-    "static/js/2.c636af6f.chunk.js.map": "/final-fantasy-databse/static/js/2.c636af6f.chunk.js.map",
+    "static/js/2.8e86ae41.chunk.js": "/final-fantasy-databse/static/js/2.8e86ae41.chunk.js",
+    "static/js/2.8e86ae41.chunk.js.map": "/final-fantasy-databse/static/js/2.8e86ae41.chunk.js.map",
     "index.html": "/final-fantasy-databse/index.html",
     "static/css/main.641afd9d.chunk.css.map": "/final-fantasy-databse/static/css/main.641afd9d.chunk.css.map",
-    "static/js/2.c636af6f.chunk.js.LICENSE.txt": "/final-fantasy-databse/static/js/2.c636af6f.chunk.js.LICENSE.txt",
+    "static/js/2.8e86ae41.chunk.js.LICENSE.txt": "/final-fantasy-databse/static/js/2.8e86ae41.chunk.js.LICENSE.txt",
     "static/media/App.css": "/final-fantasy-databse/static/media/baackground.ebf5afb7.jpg",
     "static/media/ff-logo.9f9f2a0d.jpg": "/final-fantasy-databse/static/media/ff-logo.9f9f2a0d.jpg",
     "static/media/ff-monster.780765de.png": "/final-fantasy-databse/static/media/ff-monster.780765de.png",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e69ee5f1.js",
-    "static/js/2.c636af6f.chunk.js",
+    "static/js/2.8e86ae41.chunk.js",
     "static/css/main.641afd9d.chunk.css",
-    "static/js/main.953d522d.chunk.js"
+    "static/js/main.e23c1608.chunk.js"
   ]
 }
