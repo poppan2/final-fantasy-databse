@@ -10,7 +10,7 @@ const Game = (props) => {
       if (game.gameId === "8f24fe1b-0e23-47c3-bca1-08d712cd7324") {
         return (
           <div className="ff-game" key={game.gameId}>
-            <Link to={'/games/' + game.title}><div className="ff-game-image">
+            <Link to={'/final-fantasy-databse/games/' + game.title}><div className="ff-game-image">
               <img alt="ff-game-img" src={defaultImage} />
             </div></Link>
             <ul>
@@ -31,7 +31,7 @@ const Game = (props) => {
       } else {
         return (
           <div className="ff-game">
-            <Link to={'/games/' + game.title}><div className="ff-game-image">
+            <Link to={'/final-fantasy-databse/games/' + game.title}><div className="ff-game-image">
               <img alt="ff-game-img" src={game.picture} />
             </div></Link>
             <ul>

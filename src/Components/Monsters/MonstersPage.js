@@ -34,7 +34,7 @@ const MonstersPage = () => {
   return (
     <div className="monsters">
       <div className="monster">
-        <Link to="/monsters">
+        <Link to="/final-fantasy-databse/monsters">
           <div className="monster-image">
             <img alt="FF-monster" src={defaultMonsterImg} />
             <p>

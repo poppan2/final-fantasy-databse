@@ -13,7 +13,7 @@ const Monster = (props) => {
   console.log(filteredMonsterImg);
   return (
     <div className="main-ff-monster">
-      <Link to="/monsters">
+      <Link to="/final-fantasy-databse/monsters">
         <button>Back</button>
       </Link>
       <div className="ff-indiv-monster-img">

@@ -80,7 +80,7 @@ const Character = (props) => {
   });
   return (
     <div className="characters">
-      <Link to="/characters">
+      <Link to="/final-fantasy-databse/characters">
         <button>Back</button>
       </Link>
       <div>

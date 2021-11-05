@@ -49,7 +49,7 @@ const Characters = (props) => {
   const FFChars = FFArr.map((char) => {
     const imgSrc = char && char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -60,7 +60,7 @@ const Characters = (props) => {
   const FFBEChars = FFBEArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -71,7 +71,7 @@ const Characters = (props) => {
   const FFIIChars = FFIIArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -82,7 +82,7 @@ const Characters = (props) => {
   const FFIIIChars = FFIIIArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -93,7 +93,7 @@ const Characters = (props) => {
   const FFIVChars = FFIVArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -104,7 +104,7 @@ const Characters = (props) => {
   const FFVChars = FFVArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -115,7 +115,7 @@ const Characters = (props) => {
   const FFVIChars = FFVIArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -126,7 +126,7 @@ const Characters = (props) => {
   const FFVIIChars = FFVIIArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -137,7 +137,7 @@ const Characters = (props) => {
   const FFVIIIChars = FFVIIIArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -148,7 +148,7 @@ const Characters = (props) => {
   const FFIXChars = FFIXArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -159,7 +159,7 @@ const Characters = (props) => {
   const FFXChars = FFXArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -170,7 +170,7 @@ const Characters = (props) => {
   const FFXIIChars = FFXIIArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -181,7 +181,7 @@ const Characters = (props) => {
   const FFXIIIChars = FFXIIIArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>
@@ -192,7 +192,7 @@ const Characters = (props) => {
   const FFXVChars = FFXVArr.map((char) => {
     const imgSrc = char.pictures[0]? char.pictures[0].url : defaultImg;
     return (
-      <Link to={"/characters/" + char.id}>
+      <Link to={"/final-fantasy-databse/characters/" + char.id}>
         <div className="ff-character-info">
           <img alt="ff-character" src={imgSrc} />
           <li key={char.id}>{char.name}</li>

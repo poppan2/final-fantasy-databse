@@ -29,7 +29,7 @@ const GamesPage = (props) => {
 
   return (
     <div className="games">
-      <Link to="/games">
+      <Link to="/final-fantasy-databse/games">
         <div className="game-image">
           <img id="image" src={games[i]} alt="ff-game" />
         </div>

@@ -87,19 +87,19 @@ function App() {
       <Header />
       <main className="main">
         <Route
-          path="/"
+          path="/final-fantasy-databse"
           exact
           render={() => (
             <CharactersPage randomCharacters={randomCharacters} handleClick={handleClick}/>
           )}
         />
         <Route
-          path="/characters"
+          path="/final-fantasy-databse/characters"
           exact
           render={() => <Characters characters={characters} />}
         />
         <Route
-          path="/characters/:characterId"
+          path="/final-fantasy-databse/characters/:characterId"
           exact
           render={() => (
             <Character
@@ -110,21 +110,21 @@ function App() {
             />
           )}
         />
-        <Route path="/" exact render={() => <GamesPage games={games} />} />
-        <Route path="/games" exact render={() => <Games games={games} />} />
+        <Route path="/final-fantasy-databse" exact render={() => <GamesPage games={games} />} />
+        <Route path="/final-fantasy-databse/games" exact render={() => <Games games={games} />} />
         <Route
-          path="/games/:gametitle"
+          path="/final-fantasy-databse/games/:gametitle"
           exact
           render={() => <Game games={games} />}
         />
-        <Route path="/" exact component={MonstersPage} />
+        <Route path="/final-fantasy-databse" exact component={MonstersPage} />
         <Route
-          path="/monsters"
+          path="/final-fantasy-databse/monsters"
           exact
           render={() => <Monsters monsters={monsters} />}
         />
         <Route
-          path="/monsters/:monsterId"
+          path="/final-fantasy-databse/monsters/:monsterId"
           exact
           render={() => <Monster monsters={monsters} />}
         />

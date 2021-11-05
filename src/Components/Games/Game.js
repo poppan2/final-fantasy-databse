@@ -14,7 +14,7 @@ const Game = (props) => {
 
     return (
         <div className="main-ff-game">
-          <Link to="/games">
+          <Link to="/final-fantasy-databse/games">
             <button>Back</button>
           </Link>
           <div className="ff-indiv-game">
@@ -41,7 +41,7 @@ const Game = (props) => {
   }else{
     return (
         <div className="main-ff-game">
-          <Link to="/games">
+          <Link to="/final-fantasy-databse/games">
             <button>Back</button>
           </Link>
           <div className="ff-indiv-game">

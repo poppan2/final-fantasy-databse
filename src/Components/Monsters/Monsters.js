@@ -6,7 +6,7 @@ const Monsters = (props) => {
   const monsters = props.monsters.map((monster) => {
     return (
       <div className="ff-monster" key={monster.monsterId}>
-        <Link to={'/monsters/' + monster.monsterId}><div className="ff-monster-img">
+        <Link to={'/final-fantasy-databse/monsters/' + monster.monsterId}><div className="ff-monster-img">
           <img alt="ff-monster" src={monster.picture} />
         </div></Link>
         <div className="monster-lists">
