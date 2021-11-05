@@ -3,7 +3,7 @@
 ## Project Links
 
 - [github repo](https://github.com/poppan2/final-fantasy-databse)
-- [add your deployment link]()
+- [deployment link](https://poppan2.github.io/final-fantasy-databse/)
 
 ## Project Description
 
