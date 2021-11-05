@@ -37,10 +37,6 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - [react architecture](https://cloudinary.com/console/c-64fb217d0692b911eb013208a046c0/media_library/folders/be66bec184895c743410851070c2f4f585/asset/d5fa6175bf70671aceb8b8395a7d539e/manage)
 
 
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP
 - Find and use external api 
 - Create Components
@@ -72,19 +68,19 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| |  |
-| Working with API | H | 3hrs|  |  |
-| Characters | H | 3hrs | | |
-| Monsters | H | 3hrs | | |
-| Games | H | 3hrs | | | 
-| Character | H | 2hrs | | | 
-| Monster | H | 2hrs | | | 
-| Game | H | 2hrs | | | 
-| Total | H | 21hrs |  |  |
+| Nav Bar | H | 3hrs | | 2hrs |
+| Adding Form | H | 3hrs| | 2hrs |
+| Working with API | H | 3hrs|  | 3hrs |
+| Characters | H | 3hrs | | 3hrs |
+| Monsters | H | 3hrs | | 3hrs |
+| Games | H | 3hrs | | 3hrs | 
+| Character | H | 2hrs | | 3hrs | 
+| Monster | H | 2hrs | | 2hrs | 
+| Game | H | 2hrs | | 2hrs | 
+| Total | H | 21hrs | 35hrs | 23hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
- TBD
+ No additional libraries used.
 
 ## Code Snippet
 
@@ -93,7 +89,19 @@ Use this section to include a brief code snippet of functionality that you are p
 TBD
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+Here's the code I did to initially show the character the user clicked on. If the user
+serach for a specific character in the search box, that character will be shown instead.
+
+const filteredChr = props.characters.filter((character) => {
+    return characterId === character.id;
+  });
+
+  const arrByName = props.characters.filter((name) => {
+    return name.name.toLowerCase() === props.inputValue.toLowerCase();
+  });
+
+  let resultArr = [...filteredChr];
+  if (arrByName.length > 0) {
+    resultArr = arrByName;
+  }
 ```
